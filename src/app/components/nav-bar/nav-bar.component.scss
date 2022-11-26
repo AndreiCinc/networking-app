@@ -7,8 +7,8 @@
   justify-content: flex-end;
 }
 .image {
-  padding-left: 20px;
-  padding-right: 20px;
+    padding-left: 1rem;
+    padding-right: 1rem;
   align-self: center;
   align-items: center;
 }
@@ -20,8 +20,8 @@
   background-color: rgb(217, 217, 217);
 }
 .myProfile {
-  border:solid black 5px;
-  border-radius: 5px;
+        border:solid black 5px;
+    border-radius: 5px;
   width: 120px;
   height: 40px;
   align-self: center;
@@ -31,14 +31,16 @@
   margin-right: 5px
 }
 .myProfileText {
-  font-size: 25px;
+    font-size: 25px;
   vertical-align: middle;
   padding-top: 13px;
  
 }
-.dnd{  vertical-align: middle;
-padding:0 15px;
+.dnd{ 
 padding-top: 10px;
+padding-left: 3px;
+width: 100%;
+margin:0px;
 }
 .border{
     height: 40px;
@@ -46,4 +48,9 @@ padding-top: 10px;
     border:solid black 4px;
     border-color: black;
     border-radius: 4px;
+}
+.slider{
+display: flex;
+flex-direction: column;
+align-items: center;
 }
