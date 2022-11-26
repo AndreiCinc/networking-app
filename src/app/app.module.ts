@@ -8,6 +8,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { NetworkingComponent } from './components/networking/networking.component';
+import { RewardsComponent } from './components/rewards/rewards.component';
+import { GamificationComponent } from './components/gamification/gamification.component';
+import { TimeTrakingComponent } from './components/time-traking/time-traking.component';
+import { FeedbackComponent } from './components/feedback/feedback.component';
+import { CarPoolingComponent } from './components/car-pooling/car-pooling.component';
+import { DeskComponent } from './components/desk/desk.component';
 
 import {MatMenuModule} from '@angular/material/menu';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
@@ -17,7 +24,14 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     AppComponent,
     SideNavComponent,
     NavBarComponent,
-    ContentComponent
+    ContentComponent,
+    NetworkingComponent,
+    RewardsComponent,
+    GamificationComponent,
+    TimeTrakingComponent,
+    FeedbackComponent,
+    CarPoolingComponent,
+    DeskComponent
   ],
   imports: [
     BrowserModule,
