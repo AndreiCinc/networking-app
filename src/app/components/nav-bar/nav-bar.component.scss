@@ -1,0 +1,63 @@
+.navbar {
+  display: flex;
+  background-color: #333333;
+  height: 50px;
+  width: auto;
+  color: #cecece;
+  justify-content: flex-end;
+}
+.myProfile {
+  transform: translateX(-10px);
+  top: 50%;
+  font-size: 0.75rem;
+  background-color: #4d4d4d;
+  cursor: pointer;
+  border: solid #191919 3px;
+  border-radius: 10px;
+  width: 106px;
+  height: 30px;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: 5px;
+}
+.dnd {
+    transform: translateY(30%);
+
+    font-size: 0.6rem;
+
+  padding-left: 1.2rem;
+  width: 100%;
+  margin: 0px;
+}
+.slider {
+
+  background-color: #4d4d4d;
+  margin-right: 0.8rem;
+  border-radius: 10px;
+  align-self: center;
+  justify-content: center;
+  height: 30px;
+  border: solid #191919 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+mat-slide-toggle {
+    transform: translateY(-30%);
+
+  scale: 0.4;
+}
+.text {
+  transform: translateY(30%);
+}
+.dropDown {
+  background-color: #4d4d4d;
+  padding: 0px inherit;
+}
+.white {
+  color: #cecece;
+}
+.white:hover {
+  color: #191919;
+}
