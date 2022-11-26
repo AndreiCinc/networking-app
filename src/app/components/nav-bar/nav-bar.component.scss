@@ -1,19 +1,21 @@
 .navbar {
   display: flex;
   background-color: #333333;
-  height: 70px;
+  height: 60px;
   width: auto;
   color: #cecece;
   justify-content: flex-end;
 }
 .myProfile {
-    top :50%;
-    font-size: 1.5rem;
+  transform: translateX(-10px);
+
+  top: 50%;
+  font-size: 1.4rem;
   background-color: #4d4d4d;
   cursor: pointer;
   border: solid #191919 3px;
   border-radius: 10px;
-  width: 120px;
+  width: 106px;
   height: 40px;
   align-self: center;
   justify-content: center;
@@ -26,7 +28,7 @@
   margin: 0px;
 }
 .slider {
-    background-color: #4d4d4d;
+  background-color: #4d4d4d;
 
   margin-right: 0.8rem;
   border-radius: 10px;
@@ -43,7 +45,16 @@
 mat-slide-toggle {
   scale: 0.6;
 }
-.text{
-    transform:translateY(50%);
-
+.text {
+  transform: translateY(50%);
+}
+.dropDown {
+  background-color: #4d4d4d;
+  padding: 0px inherit;
+}
+.white {
+  color: #cecece;
+}
+.white:hover {
+  color: #191919;
 }

@@ -13,6 +13,7 @@ export class NavBarComponent {
   disabled = false;
   available = true;
 
+
   switchAvalability() {
     this.available = !this.available;
   }

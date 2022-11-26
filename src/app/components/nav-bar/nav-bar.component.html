@@ -2,11 +2,15 @@
   <div class="myProfile" mat-button [matMenuTriggerFor]="menu">
     <p class="text">My Profile</p>
   </div>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item>My Profile</button>
-    <button mat-menu-item>Help</button>
-    <button mat-menu-item>Settings</button>
-    <button mat-menu-item>Logout</button>
+  <mat-menu  #menu="matMenu">
+    <button class="dropDown" mat-menu-item><p class="white">
+
+        My Profile
+    </p>
+</button>
+    <button class="dropDown" mat-menu-item><p class="white">Help</p></button>
+    <button class="dropDown" mat-menu-item><p class="white">Settings</p></button>
+    <button class="dropDown" mat-menu-item><p class="white">Logout</p></button>
   </mat-menu>
 <div class="slider">
     <p class="dnd">DND</p>
