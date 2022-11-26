@@ -1,5 +1,49 @@
 .navbar {
-    background-color: rgb(255, 0, 0);
-    height: 1rem;
-    width: auto;
+  display: flex;
+  background-color: rgb(217, 217, 217);
+  height: 70px;
+  width: auto;
+
+  justify-content: flex-end;
+}
+.image {
+  padding-left: 20px;
+  padding-right: 20px;
+  align-self: center;
+  align-items: center;
+}
+
+.red {
+  background-color: red;
+}
+.green {
+  background-color: rgb(217, 217, 217);
+}
+.myProfile {
+  border:solid black 5px;
+  border-radius: 5px;
+  width: 120px;
+  height: 40px;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 5px
+}
+.myProfileText {
+  font-size: 25px;
+  vertical-align: middle;
+  padding-top: 13px;
+ 
+}
+.dnd{  vertical-align: middle;
+padding:0 15px;
+padding-top: 10px;
+}
+.border{
+    height: 40px;
+    width: 60px;
+    border:solid black 4px;
+    border-color: black;
+    border-radius: 4px;
 }
