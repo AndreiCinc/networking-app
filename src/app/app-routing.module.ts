@@ -13,11 +13,11 @@ const routes: Routes = [
   { path: 'rewards', component: RewardsComponent },
   { path: 'gamification', component: GamificationComponent },
   { path: 'time-traking', component: TimeTrakingComponent },
-  { path: '', redirectTo: '/networking', pathMatch: 'full' },
-  { path: '**', redirectTo: '/networking', pathMatch: 'full' },
   { path: 'feedback', component: FeedbackComponent },
   { path: 'car-pooling', component: CarPoolingComponent },
   { path: 'desk', component: DeskComponent },
+  { path: '', redirectTo: '/networking', pathMatch: 'full' },
+  { path: '**', redirectTo: '/networking', pathMatch: 'full' },
 ];
 
 @NgModule({
