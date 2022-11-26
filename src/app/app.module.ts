@@ -20,6 +20,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { EventsComponent } from './components/events/events.component';
+import { EventCardComponent } from './components/event-card/event-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { EventsComponent } from './components/events/events.component';
     FeedbackComponent,
     CarPoolingComponent,
     DeskComponent,
-    EventsComponent
+    EventsComponent,
+    EventCardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,5 @@
+@use '../app/style/global.scss';
+
 #content {
   width: 100%;
   height: 95vh;
@@ -14,5 +16,8 @@
 
 #events-block { 
   width: 32rem;
-  background: blue;
+  margin: 5px 5px 5px 0px;
+  background: global.$second-color;
+  border: global.$border-size solid global.$border-color;
+  border-radius: global.$border-radius;
 }

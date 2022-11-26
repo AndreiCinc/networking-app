@@ -6,15 +6,11 @@ img {
 }
 
 .menu-icon {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border: global.$border-size solid global.$border-color;
-    border-radius: global.$border-radius;
-    margin: 0px 5px;
-
-    a img {
-        padding-bottom: 90%;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: global.$border-size solid global.$border-color;
+  border-radius: global.$border-radius;
+  height: 100%;
 }
