@@ -1,3 +1,5 @@
+@use 'src/app/style/global.scss';
+
 img {
     width: 64px;
     height: 64px;
@@ -8,6 +10,9 @@ img {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    border: global.$border-size solid global.$border-color;
+    border-radius: global.$border-radius;
+    margin: 0px 5px;
 
     a img {
         padding-bottom: 100%;
