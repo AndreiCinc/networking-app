@@ -7,11 +7,10 @@
   justify-content: flex-end;
 }
 .myProfile {
-  transform: translateX(-10px);
   top: 50%;
   font-size: 0.75rem;
-  background-color: #4d4d4d;
   cursor: pointer;
+  background-color: #4d4d4d;
   border: solid #191919 3px;
   border-radius: 10px;
   width: 106px;
@@ -19,7 +18,7 @@
   align-self: center;
   justify-content: center;
   text-align: center;
-  margin-right: 5px;
+  margin-right: 15px;
 }
 .dnd {
     transform: translateY(30%);
@@ -60,4 +59,21 @@ mat-slide-toggle {
 }
 .white:hover {
   color: #191919;
+}
+.brakes{
+  border-radius: 10px;
+  margin-right: 15px;
+  align-self: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  background-color: #4d4d4d;
+  border: solid #191919 3px;
+  display: flex;
+}
+.imgSize{
+  height: 25px;
+  width: 25px;
+  justify-content: center;
+  transform: translateY(10%);
 }
