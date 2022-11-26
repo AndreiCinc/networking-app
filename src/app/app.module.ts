@@ -19,6 +19,7 @@ import { DeskComponent } from './components/desk/desk.component';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { EventsComponent } from './components/events/events.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     TimeTrakingComponent,
     FeedbackComponent,
     CarPoolingComponent,
-    DeskComponent
+    DeskComponent,
+    EventsComponent
   ],
   imports: [
     BrowserModule,
