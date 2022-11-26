@@ -1,56 +1,49 @@
 .navbar {
   display: flex;
-  background-color: rgb(217, 217, 217);
+  background-color: #333333;
   height: 70px;
   width: auto;
-
+  color: #cecece;
   justify-content: flex-end;
 }
-.image {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  align-self: center;
-  align-items: center;
-}
-
-.red {
-  background-color: red;
-}
-.green {
-  background-color: rgb(217, 217, 217);
-}
 .myProfile {
-        border:solid black 5px;
-    border-radius: 5px;
+    top :50%;
+    font-size: 1.5rem;
+  background-color: #4d4d4d;
+  cursor: pointer;
+  border: solid #191919 3px;
+  border-radius: 10px;
   width: 120px;
   height: 40px;
   align-self: center;
   justify-content: center;
   text-align: center;
-  vertical-align: middle;
-  margin-right: 5px
+  margin-right: 5px;
 }
-.myProfileText {
-    font-size: 25px;
-  vertical-align: middle;
-  padding-top: 13px;
- 
+.dnd {
+  padding-left: 0.8rem;
+  width: 100%;
+  margin: 0px;
 }
-.dnd{ 
-padding-top: 10px;
-padding-left: 3px;
-width: 100%;
-margin:0px;
+.slider {
+    background-color: #4d4d4d;
+
+  margin-right: 0.8rem;
+  border-radius: 10px;
+
+  align-self: center;
+  justify-content: center;
+  height: 40px;
+
+  border: solid #191919 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.border{
-    height: 40px;
-    width: 60px;
-    border:solid black 4px;
-    border-color: black;
-    border-radius: 4px;
+mat-slide-toggle {
+  scale: 0.6;
 }
-.slider{
-display: flex;
-flex-direction: column;
-align-items: center;
+.text{
+    transform:translateY(50%);
+
 }
