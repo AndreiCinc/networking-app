@@ -1,0 +1,15 @@
+img {
+    width: 64px;
+    height: 64px;
+}
+
+.menu-icon {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    a img {
+        padding-bottom: 100%;
+    }
+}
