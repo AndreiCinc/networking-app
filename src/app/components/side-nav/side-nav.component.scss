@@ -12,5 +12,16 @@ img {
   align-items: center;
   border: global.$border-size solid global.$border-color;
   border-radius: global.$border-radius;
-  height: 100%;
+  height: 60%;
 }
+
+a:hover {
+  background-color: grey;
+  border-radius: 5px;
+}
+
+.active {
+  background-color: grey;
+  border-radius: 5px;
+}
+
