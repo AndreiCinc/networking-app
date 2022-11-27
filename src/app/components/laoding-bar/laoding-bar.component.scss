@@ -1,7 +1,7 @@
 .title {
   color: #cecece;
 }
-div{
+div {
   margin: 0px !important;
 }
 .progress-bar-container {
@@ -13,13 +13,14 @@ div{
   justify-content: center;
   padding-right: 1rem;
   padding-left: 1rem;
+  background-color: #4d4d4d;
 }
 
 .progress-bar-size {
   position: relative;
   top: 50%;
   transform: translate(0, -50%);
-padding: 0px !important;
+  padding: 0px !important;
   height: 1rem;
   display: flex;
   border: solid #191919 3px;
@@ -32,7 +33,6 @@ padding: 0px !important;
   border-radius: 7px;
 }
 
-
 .progress-bar-labels {
   position: relative;
   color: #cecece;
@@ -40,40 +40,59 @@ padding: 0px !important;
   transform: translate(0, 30%);
 }
 
-.progress-bar-treshlod{
+.progress-bar-treshlod {
   position: relative;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    background-color: #cecece;
-    border: #191919 solid 1px;
-    width: 0.5rem;
-    height: 0.5rem;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color: #cecece;
+  width: 0.5rem;
+  height: 0.5rem;
 }
 
 .a {
   right: -20%;
 }
 .positionA {
-right: -19.4%;  }
+  right: -19.4%;
+}
 .b {
-  right: -45%;}
+  right: -45%;
+}
 .positionB {
-  right: -44.1%;  }
+  right: -44.1%;
+}
 .c {
-  right: -68%;  }
-  .positionC {
-    right: -67%;
-  }
+  right: -68%;
+}
+.positionC {
+  right: -67%;
+}
 .d {
-  right: -94.6%;}
+  right: -93.5%;
+}
 .positionD {
-  right: -93.8%;  }
-  .test{
-    background-color: #191919 !important;
-    height: 1rem;
-  }
-  .pos{
-    display: flex; 
-     top: 35%;
-    position: relative;
+  right: -92.6%;
+}
+.test {
+  background-color: #191919 !important;
+  height: 1rem;
+}
+.pos {
+  display: flex;
+  top: 35%;
+  position: relative;
+}
+.pos1 {
+  display: flex;
+  top: -11.6%;
+  position: relative;
+}
 
-  }
+.e {
+  transform: rotate(180deg);
+  right: -58%;
+}
+.positionE {
+  right: -57.7%;
+  top:-10.5%
+}
+
