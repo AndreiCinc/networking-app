@@ -5,7 +5,7 @@ interface Games {
   viewValue: string;
 }
 
-interface Car {
+interface Months {
   value: string;
   viewValue: string;
 }
@@ -16,6 +16,9 @@ interface Car {
   styleUrls: ['./gamification.component.scss']
 })
 export class GamificationComponent {
+  lastGameEvents: boolean = true;
+  pingPong: boolean = false;
+  pool: boolean = false;
 
   selectedValue= '';
   selectedCar: string | undefined;
@@ -26,9 +29,41 @@ export class GamificationComponent {
     {value: 'darts-2', viewValue: 'Darts'},
   ];
 
-  cars: Car[] = [
-    {value: 'volvo', viewValue: 'Volvo'},
-    {value: 'saab', viewValue: 'Saab'},
-    {value: 'mercedes', viewValue: 'Mercedes'},
+  months: Months[] = [
+    {value: 'january', viewValue: 'January'},
+    {value: 'february', viewValue: 'February'},
+    {value: 'march', viewValue: 'March'},
+    {value: 'april', viewValue: 'April'},
+    {value: 'may', viewValue: 'May'},
+    {value: 'june', viewValue: 'June'},
+    {value: 'july', viewValue: 'July'},
+    {value: 'august', viewValue: 'August'},
+    {value: 'september', viewValue: 'September'},
+    {value: 'octomber', viewValue: 'Octomber'},
+    {value: 'november', viewValue: 'November'},
+    {value: 'december', viewValue: 'December'},
   ];
+
+  changeGameEvents(table: any) {
+    switch (table) {
+      case 'lastGameEvents':
+        this.lastGameEvents = true;
+        this.pingPong = false;
+        this.pool = false;
+        break;
+      case 'pingPong':
+        this.lastGameEvents = false;
+        this.pingPong = true;
+        this.pool = false;
+        break;
+      case 'pool':
+        this.lastGameEvents = false;
+        this.pingPong = false;
+        this.pool = true;
+        break;
+      default:
+        break;
+
+    }
+  }
 }
