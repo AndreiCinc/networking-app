@@ -15,12 +15,17 @@ import { TimeTrakingComponent } from './components/time-traking/time-traking.com
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { CarPoolingComponent } from './components/car-pooling/car-pooling.component';
 import { DeskComponent } from './components/desk/desk.component';
+import {MatSelectModule} from '@angular/material/select';
+import { FormsModule, NgModel } from '@angular/forms';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 import {MatMenuModule} from '@angular/material/menu';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { EventsComponent } from './components/events/events.component';
 import { EventCardComponent } from './components/event-card/event-card.component';
+import { LaodingBarComponent } from './components/laoding-bar/laoding-bar.component';
+import { ArrowComponent } from './components/arrow/arrow.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +40,9 @@ import { EventCardComponent } from './components/event-card/event-card.component
     CarPoolingComponent,
     DeskComponent,
     EventsComponent,
-    EventCardComponent
+    EventCardComponent,
+    LaodingBarComponent,
+    ArrowComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,6 +52,9 @@ import { EventCardComponent } from './components/event-card/event-card.component
     MatMenuModule,
     MatSlideToggleModule,
     MatFormFieldModule,
+    MatSelectModule,
+    FormsModule,
+    MatProgressBarModule      
   ],
   providers: [],
   bootstrap: [AppComponent]
