@@ -15,13 +15,26 @@ import { TimeTrakingComponent } from './components/time-traking/time-traking.com
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { CarPoolingComponent } from './components/car-pooling/car-pooling.component';
 import { DeskComponent } from './components/desk/desk.component';
+import {MatSelectModule} from '@angular/material/select';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
+import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { EventsComponent } from './components/events/events.component';
 import { EventCardComponent } from './components/event-card/event-card.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { LaodingBarComponent } from './components/laoding-bar/laoding-bar.component';
+import { ArrowComponent } from './components/arrow/arrow.component';
+import { DialogContentExample, DialogContentExampleDialog } from './components/add-event-modal/add-event-modal.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MaterialExampleModule } from './material.module';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +49,11 @@ import { MatExpansionModule } from '@angular/material/expansion';
     CarPoolingComponent,
     DeskComponent,
     EventsComponent,
-    EventCardComponent
+    EventCardComponent,
+    LaodingBarComponent,
+    ArrowComponent,
+    DialogContentExample,
+    DialogContentExampleDialog
   ],
   imports: [
     BrowserModule,  
@@ -46,7 +63,16 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatMenuModule,
     MatSlideToggleModule,
     MatFormFieldModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatSelectModule,
+    MatProgressBarModule,      
+    MatButtonModule,
+    MatDialogModule,
+    FormsModule,
+    HttpClientModule,
+    MatNativeDateModule,
+    MaterialExampleModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
