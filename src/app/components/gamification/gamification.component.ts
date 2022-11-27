@@ -5,7 +5,7 @@ interface Games {
   viewValue: string;
 }
 
-interface Car {
+interface Months {
   value: string;
   viewValue: string;
 }
@@ -26,9 +26,18 @@ export class GamificationComponent {
     {value: 'darts-2', viewValue: 'Darts'},
   ];
 
-  cars: Car[] = [
-    {value: 'volvo', viewValue: 'Volvo'},
-    {value: 'saab', viewValue: 'Saab'},
-    {value: 'mercedes', viewValue: 'Mercedes'},
+  months: Months[] = [
+    {value: 'january', viewValue: 'January'},
+    {value: 'february', viewValue: 'February'},
+    {value: 'march', viewValue: 'March'},
+    {value: 'april', viewValue: 'April'},
+    {value: 'may', viewValue: 'May'},
+    {value: 'june', viewValue: 'June'},
+    {value: 'july', viewValue: 'July'},
+    {value: 'august', viewValue: 'August'},
+    {value: 'september', viewValue: 'September'},
+    {value: 'octomber', viewValue: 'Octomber'},
+    {value: 'november', viewValue: 'November'},
+    {value: 'december', viewValue: 'December'},
   ];
 }

@@ -1,11 +1,27 @@
-<p>gamification works!</p>
+<h1 class="title">Gamification</h1>
+<div style="display: flex; justify-content: space-between;">
 
-<mat-form-field appearance="fill">
-    <mat-label>Select Game</mat-label>
-    <mat-select [(ngModel)]="selectedValue" name="game">
-      <mat-option *ngFor="let game of games" [value]="game.value">
-        {{game.viewValue}}
+  <mat-chip-listbox aria-label="Fish selection">
+    <mat-chip-option>Last game events</mat-chip-option>
+    <mat-chip-option>Ping-Pong</mat-chip-option>
+    <mat-chip-option>Pool</mat-chip-option>
+  </mat-chip-listbox>
+
+<div>
+  <mat-form-field appearance="fill">
+    <mat-label>Select Month</mat-label>
+    <mat-select [(ngModel)]="selectedValue" name="month">
+      <mat-option *ngFor="let month of months" [value]="month.value">
+        {{month.viewValue}}
       </mat-option>
     </mat-select>
   </mat-form-field>
-  <p> Selected food: {{selectedValue}} </p>
+</div>
+
+</div>
+
+<app-pool-table></app-pool-table>
+
+<app-ping-pong-table></app-ping-pong-table>
+
+<app-table></app-table>

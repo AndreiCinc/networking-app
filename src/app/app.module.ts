@@ -15,17 +15,22 @@ import { TimeTrakingComponent } from './components/time-traking/time-traking.com
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { CarPoolingComponent } from './components/car-pooling/car-pooling.component';
 import { DeskComponent } from './components/desk/desk.component';
-import {MatSelectModule} from '@angular/material/select';
+import { MatSelectModule } from '@angular/material/select';
 import { FormsModule, NgModel } from '@angular/forms';
-import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatTableModule } from '@angular/material/table';
+import { MatChipsModule } from '@angular/material/chips';
 
-import {MatMenuModule} from '@angular/material/menu';
-import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { EventsComponent } from './components/events/events.component';
 import { EventCardComponent } from './components/event-card/event-card.component';
 import { LaodingBarComponent } from './components/laoding-bar/laoding-bar.component';
 import { ArrowComponent } from './components/arrow/arrow.component';
+import { TableComponent } from './components/table/table.component';
+import { PingPongTableComponent } from './components/ping-pong-table/ping-pong-table.component';
+import { PoolTableComponent } from './components/pool-table/pool-table.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,6 +48,9 @@ import { ArrowComponent } from './components/arrow/arrow.component';
     EventCardComponent,
     LaodingBarComponent,
     ArrowComponent,
+    TableComponent,
+    PingPongTableComponent,
+    PoolTableComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,9 +62,11 @@ import { ArrowComponent } from './components/arrow/arrow.component';
     MatFormFieldModule,
     MatSelectModule,
     FormsModule,
-    MatProgressBarModule      
+    MatProgressBarModule,
+    MatTableModule,
+    MatChipsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
