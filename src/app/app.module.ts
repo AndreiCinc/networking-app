@@ -15,6 +15,10 @@ import { TimeTrakingComponent } from './components/time-traking/time-traking.com
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { CarPoolingComponent } from './components/car-pooling/car-pooling.component';
 import { DeskComponent } from './components/desk/desk.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatChipsModule } from '@angular/material/chips';
+
+
 import {MatSelectModule} from '@angular/material/select';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 
@@ -27,6 +31,9 @@ import { EventCardComponent } from './components/event-card/event-card.component
 import { MatExpansionModule } from '@angular/material/expansion';
 import { LaodingBarComponent } from './components/laoding-bar/laoding-bar.component';
 import { ArrowComponent } from './components/arrow/arrow.component';
+import { TableComponent } from './components/table/table.component';
+import { PingPongTableComponent } from './components/ping-pong-table/ping-pong-table.component';
+import { PoolTableComponent } from './components/pool-table/pool-table.component';
 import { DialogContentExample, DialogContentExampleDialog } from './components/add-event-modal/add-event-modal.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -52,6 +59,9 @@ import { MaterialExampleModule } from './material.module';
     EventCardComponent,
     LaodingBarComponent,
     ArrowComponent,
+    TableComponent,
+    PingPongTableComponent,
+    PoolTableComponent,
     DialogContentExample,
     DialogContentExampleDialog
   ],
@@ -69,12 +79,15 @@ import { MaterialExampleModule } from './material.module';
     MatButtonModule,
     MatDialogModule,
     FormsModule,
+    MatProgressBarModule,
+    MatTableModule,
+    MatChipsModule,
     HttpClientModule,
     MatNativeDateModule,
     MaterialExampleModule,
     ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
