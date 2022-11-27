@@ -2,9 +2,9 @@
 <div style="display: flex; justify-content: space-between;">
 
   <mat-chip-listbox aria-label="Fish selection">
-    <mat-chip-option>Last game events</mat-chip-option>
-    <mat-chip-option>Ping-Pong</mat-chip-option>
-    <mat-chip-option>Pool</mat-chip-option>
+    <mat-chip-option (click)="changeGameEvents('lastGameEvents')">Last game events</mat-chip-option>
+    <mat-chip-option (click)="changeGameEvents('pingPong')">Ping-Pong</mat-chip-option>
+    <mat-chip-option (click)="changeGameEvents('pool')">Pool</mat-chip-option>
   </mat-chip-listbox>
 
 <div>
@@ -20,8 +20,8 @@
 
 </div>
 
-<app-pool-table></app-pool-table>
+<app-pool-table *ngIf="pool"></app-pool-table>
 
-<app-ping-pong-table></app-ping-pong-table>
+<app-ping-pong-table *ngIf="pingPong"></app-ping-pong-table>
 
-<app-table></app-table>
+<app-table *ngIf="lastGameEvents"></app-table>
