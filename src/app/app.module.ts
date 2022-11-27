@@ -24,6 +24,7 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { EventsComponent } from './components/events/events.component';
 import { EventCardComponent } from './components/event-card/event-card.component';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { LaodingBarComponent } from './components/laoding-bar/laoding-bar.component';
 import { ArrowComponent } from './components/arrow/arrow.component';
 import { DialogContentExample, DialogContentExampleDialog } from './components/add-event-modal/add-event-modal.component';
@@ -39,7 +40,7 @@ import { MaterialExampleModule } from './material.module';
     AppComponent,
     SideNavComponent,
     NavBarComponent,
-    ContentComponent,
+    ContentComponent,   
     NetworkingComponent,
     RewardsComponent,
     GamificationComponent,
@@ -55,13 +56,14 @@ import { MaterialExampleModule } from './material.module';
     DialogContentExampleDialog
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,  
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSidenavModule,
     MatMenuModule,
     MatSlideToggleModule,
     MatFormFieldModule,
+    MatExpansionModule,
     MatSelectModule,
     MatProgressBarModule,      
     MatButtonModule,
