@@ -21,12 +21,13 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { EventsComponent } from './components/events/events.component';
 import { EventCardComponent } from './components/event-card/event-card.component';
+import { MatExpansionModule } from '@angular/material/expansion';
 @NgModule({
   declarations: [
     AppComponent,
     SideNavComponent,
     NavBarComponent,
-    ContentComponent,
+    ContentComponent,   
     NetworkingComponent,
     RewardsComponent,
     GamificationComponent,
@@ -38,13 +39,14 @@ import { EventCardComponent } from './components/event-card/event-card.component
     EventCardComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,  
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSidenavModule,
     MatMenuModule,
     MatSlideToggleModule,
     MatFormFieldModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
