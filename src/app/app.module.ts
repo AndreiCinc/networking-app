@@ -16,9 +16,9 @@ import { FeedbackComponent } from './components/feedback/feedback.component';
 import { CarPoolingComponent } from './components/car-pooling/car-pooling.component';
 import { DeskComponent } from './components/desk/desk.component';
 import {MatSelectModule} from '@angular/material/select';
-import { FormsModule, NgModel } from '@angular/forms';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 
+import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -26,6 +26,14 @@ import { EventsComponent } from './components/events/events.component';
 import { EventCardComponent } from './components/event-card/event-card.component';
 import { LaodingBarComponent } from './components/laoding-bar/laoding-bar.component';
 import { ArrowComponent } from './components/arrow/arrow.component';
+import { DialogContentExample, DialogContentExampleDialog } from './components/add-event-modal/add-event-modal.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MaterialExampleModule } from './material.module';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,6 +51,8 @@ import { ArrowComponent } from './components/arrow/arrow.component';
     EventCardComponent,
     LaodingBarComponent,
     ArrowComponent,
+    DialogContentExample,
+    DialogContentExampleDialog
   ],
   imports: [
     BrowserModule,
@@ -53,8 +63,14 @@ import { ArrowComponent } from './components/arrow/arrow.component';
     MatSlideToggleModule,
     MatFormFieldModule,
     MatSelectModule,
+    MatProgressBarModule,      
+    MatButtonModule,
+    MatDialogModule,
     FormsModule,
-    MatProgressBarModule      
+    HttpClientModule,
+    MatNativeDateModule,
+    MaterialExampleModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

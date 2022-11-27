@@ -1,0 +1,111 @@
+<h2 mat-dialog-title>Create new event</h2>
+<mat-dialog-content class="mat-typography">
+  <form class="example-form">
+    <div class="first">
+      <mat-form-field id="first" class="example-full-width" appearance="fill">
+        <mat-label>Type of break</mat-label>
+        <input
+          type="text"
+          placeholder="Pick one"
+          aria-label="Number"
+          matInput
+          [formControl]="myControl"
+          [matAutocomplete]="auto"
+        />
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let option of typeOfBreak" [value]="option">
+            {{option}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Select role</mat-label>
+        <mat-select>
+          <mat-option value="one">All</mat-option>
+          <mat-option value="two">FrontEnd Developer</mat-option>
+          <mat-option value="three">BackEnd Developer</mat-option>
+          <mat-option value="four">FullStack Developer</mat-option>
+          <mat-option value="four">Project Manager</mat-option>
+          <mat-option value="four">Scrum Master</mat-option>
+          <mat-option value="four">HR</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Topics</mat-label>
+        <mat-select>
+          <mat-option value="one">All</mat-option>
+          <mat-option value="two">DevHacks2022</mat-option>
+          <mat-option value="three">Project X</mat-option>
+          <mat-option value="four">Unit Testing</mat-option>
+          <mat-option value="four">Deployment</mat-option>
+          <mat-option value="four">Aws Services</mat-option>
+          <mat-option value="four">Pipelines</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <!--create an input to insert number of people, an input for time start and a slider for input -->
+    <div class="second">
+      <mat-form-field appearance="fill">
+        <mat-label>Number of people needed</mat-label>
+        <input matInput type="number" placeholder="Number of people" />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Time start</mat-label>
+        <input matInput type="time" placeholder="Time start" />
+      </mat-form-field>
+      <mat-slide-toggle
+        class="exampleimage"
+        [color]="color"
+        [checked]="checked"
+        [disabled]="disabled"
+        >New hire!
+      </mat-slide-toggle>
+    </div>
+
+    <div>
+      <p>
+        <i>Enter your keywords</i>
+      </p>
+      <mat-form-field id="keywords" appearance="fill" class="example-form-field">
+        <mat-label>Event keywords</mat-label>
+        <mat-chip-grid #chipGrid aria-label="Enter keywords" [formControl]="formControl" >
+          <mat-chip-row *ngFor="let keyword of keywords" (removed)="removeKeyword(keyword)">
+            {{keyword}}
+            <button matChipRemove aria-label="'remove ' + keyword">
+              <mat-icon>cancel</mat-icon>
+            </button>
+          </mat-chip-row>
+        </mat-chip-grid>
+        <input placeholder="New keyword..."
+                [matChipInputFor]="chipGrid"
+                (matChipInputTokenEnd)="add($event)"/>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field appearance="fill">
+        <mat-label>Location</mat-label>
+        <mat-select>
+          <mat-option value="one">Building A</mat-option>
+          <mat-option value="two">Building B</mat-option>
+          <mat-option value="three">Front Office</mat-option>
+          <mat-option value="four">Kitchen</mat-option>
+          <mat-option value="four">Deployment</mat-option>
+          <mat-option value="four">Smoke area A</mat-option>
+          <mat-option value="four">Campus Entry</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>
+    Create event
+  </button>
+</mat-dialog-actions>
+
+<!-- Copyright 2022 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at https://angular.io/license -->
