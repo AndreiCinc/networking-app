@@ -40,3 +40,17 @@
     height: 0.5rem;
     transform: translate(1rem,1.2rem);
 }
+.black{
+  background-color: #191919;
+}
+.history-element{
+  color: #cecece;
+  padding-top: 0.5rem;
+}
+
+mat-accordion::ng-deep {
+  mat-expansion-panel {
+    background: transparent;
+  }
+}
+

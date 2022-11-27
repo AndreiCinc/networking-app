@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./rewards.component.scss'],
 })
 export class RewardsComponent {
+  panelOpenState = false;
+
 
 }
