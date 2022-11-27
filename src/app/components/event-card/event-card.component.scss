@@ -13,6 +13,7 @@ div.cardWrapper {
   color: global.$text-color;
   padding: 0.5rem;
   height: auto;
+  cursor: pointer;
 
   .panelTitle {
     width: 100%;
@@ -73,11 +74,26 @@ div.cardWrapper {
     .placeFormat {
       display: inline;
       background: global.$light;
-      padding-left: 4px;
-      padding-right: 4px;
+      margin-left: 4px;
+      padding-left: 6px;
+      padding-right: 6px;
       border-radius: 8px;
+    }
+
+    .startTime {
+      margin-right: 10px;
     }
   }
 
+  .class {
+    width: 100%;
+  }
 
+  .progress-bar {
+    margin-top: 5px;
+    height: 7px;
+    border-radius: 3.5px;
+    width: 380px;
+    display: flex;
+  }
 }
