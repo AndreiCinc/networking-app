@@ -1,1 +1,11 @@
 <p>gamification works!</p>
+
+<mat-form-field appearance="fill">
+    <mat-label>Select Game</mat-label>
+    <mat-select [(ngModel)]="selectedValue" name="game">
+      <mat-option *ngFor="let game of games" [value]="game.value">
+        {{game.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <p> Selected food: {{selectedValue}} </p>

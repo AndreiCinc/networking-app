@@ -1,0 +1,42 @@
+.title {
+  color: #cecece;
+}
+
+.progress-bar-container{
+    box-sizing: border-box;
+    height: 5rem;
+    width: 90%;
+    border: solid #191919 3px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-bar-size {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin: auto;
+  height: 1rem;
+  width: 90%;
+  display: flex;
+  border: solid #191919 3px;
+  border-radius: 10px;
+}
+.progress-bar-length {
+
+  background-color: green;
+  height: inherit;
+  width: 50%;
+  border-radius: 7px;
+
+}
+
+.c{
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: #cecece;
+    border: #191919 solid 1px;
+    width: 0.5rem;
+    height: 0.5rem;
+    transform: translate(1rem,1.2rem);
+}
