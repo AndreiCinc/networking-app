@@ -1,5 +1,5 @@
 import { MOCK_EVENT_DATA } from './../../shared/event-card-constants';
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { ThemePalette } from '@angular/material/core';
 import { expand } from 'rxjs';
 
@@ -9,7 +9,7 @@ import { expand } from 'rxjs';
   styleUrls: ['./event-card.component.scss']
 })
 export class EventCardComponent implements OnInit {
-
+  @Input() disabled: boolean = false;
 
   opened: boolean = false;
   openedS: boolean = true;

@@ -1,5 +1,5 @@
 <ng-container >
-  <div class="cardWrapper" (click)="handleOpen()">
+  <div class="cardWrapper" (click)="handleOpen()" [ngStyle]="{'cursor': disabled ? 'auto' : 'pointer'}">
       <div class="panelTitle">
         <div CLASS="title">
           <img class="availableBubble" src="../../../assets/Icons/Screenshot 2022-11-27 013609.png" alt="whatever">
@@ -11,7 +11,7 @@
         <span class="roleDescription">{{mockDataA[0].role}}</span>
         <span class="workingOn">Working on: {{mockDataA[0].workingOn}}</span>
       </div>
-      <div class="body" *ngIf="opened">
+      <div class="body" *ngIf="opened || disabled">
         <span>Impacted:</span>
         <div class="bodyElements" *ngFor="let impacted of mockDataA[0].impacted.value">
           <span>{{impacted}}</span>
@@ -40,7 +40,7 @@
         [value]="mockDataA[0].duration"></mat-progress-bar>
       </div>
   </div>
-  <div class="cardWrapper" (click)="handleOpenS()">
+  <div class="cardWrapper" (click)="handleOpenS()" [ngStyle]="{'cursor': disabled ? 'auto' : 'pointer'}">
     <div class="panelTitle">
       <div CLASS="title">
         <img class="availableBubble" src="../../../assets/Icons/Screenshot 2022-11-27 013609.png" alt="whatever">
@@ -52,7 +52,7 @@
       <span class="roleDescription">{{mockDataA[1].role}}</span>
       <span class="workingOn">Working on: {{mockDataA[1].workingOn}}</span>
     </div>
-    <div class="body" *ngIf="openedS">
+    <div class="body" *ngIf="openedS || disabled">
       <span>Impacted:</span>
       <div class="bodyElements" *ngFor="let impacted of mockDataA[1].impacted.value">
         <span>{{impacted}}</span>

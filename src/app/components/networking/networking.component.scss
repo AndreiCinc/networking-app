@@ -3,15 +3,37 @@
     width: 100%;
     display: flex;
     background-color: #4D4D4D;
+    
   }
 
+  .modal {
+    display: flex;
+    flex-direction: column;
+
+    app-event-card {
+      margin-top: 10px;
+    }
+  }
   #events-block {
-    width: 250%;
     margin: 5px;
     border: 3px solid #191919;
     border-color: #191919;
     border-radius: 10px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: flex-start;
+
+    h2 {
+      margin-bottom: 0px;
+    }
+
+    img {
+      margin-top: 20px;
+      width: fit-content;
+      height: 250px;
+    }
   }
 
   .class {
