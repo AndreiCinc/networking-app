@@ -1,25 +1,26 @@
-
 <h1 class="title">Rewards</h1>
 <app-laoding-bar></app-laoding-bar>
 
 <mat-accordion class=".black">
-<mat-expansion-panel class=".black" (opened)="panelOpenState = true"
-(closed)="panelOpenState = false">
-<mat-expansion-panel-header class=".black">
-<mat-panel-title>
-Hystory
-</mat-panel-title>
-<mat-panel-description>
-</mat-panel-description>
-</mat-expansion-panel-header>
-<h3 class="history-element" >October</h3>
-<app-laoding-bar></app-laoding-bar>
-<h3 class="history-element">September</h3>
-<app-laoding-bar></app-laoding-bar>
-<h3 class="history-element">August</h3>
-<app-laoding-bar></app-laoding-bar>
-<h3 class="history-element">July</h3>
+  <mat-expansion-panel
+    class=".black"
+    (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false"
+  >
+    <mat-expansion-panel-header class=".black">
+      <mat-panel-title>
+        <h2 style="color: #cecece;">History</h2>
+      </mat-panel-title>
+      <mat-panel-description> </mat-panel-description>
+    </mat-expansion-panel-header>
+    <h3 class="history-element">October</h3>
+    <app-laoding-bar></app-laoding-bar>
+    <h3 class="history-element">September</h3>
+    <app-laoding-bar></app-laoding-bar>
+    <h3 class="history-element">August</h3>
+    <app-laoding-bar></app-laoding-bar>
+    <h3 class="history-element">July</h3>
 
-<app-laoding-bar></app-laoding-bar>
-</mat-expansion-panel>
+    <app-laoding-bar></app-laoding-bar>
+  </mat-expansion-panel>
 </mat-accordion>
