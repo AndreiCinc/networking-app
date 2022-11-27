@@ -1,4 +1,4 @@
-
+<h2>Pool leaderboards</h2>
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
     <!--- Note that these columns can be defined in any order.
@@ -12,11 +12,11 @@
   
     <!-- Name Column -->
     <ng-container matColumnDef="team1">
-      <th mat-header-cell *matHeaderCellDef> Team 1 </th>
+      <th mat-header-cell *matHeaderCellDef> Name </th>
       <td mat-cell *matCellDef="let element"> {{element.team1}} </td>
     </ng-container>
     <ng-container matColumnDef="team2">
-        <th mat-header-cell *matHeaderCellDef> Team 2 </th>
+        <th mat-header-cell *matHeaderCellDef> Games played </th>
         <td mat-cell *matCellDef="let element"> {{element.team2}} </td>
       </ng-container>
   

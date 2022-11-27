@@ -16,6 +16,9 @@ interface Months {
   styleUrls: ['./gamification.component.scss']
 })
 export class GamificationComponent {
+  lastGameEvents: boolean = true;
+  pingPong: boolean = false;
+  pool: boolean = false;
 
   selectedValue= '';
   selectedCar: string | undefined;
@@ -40,4 +43,27 @@ export class GamificationComponent {
     {value: 'november', viewValue: 'November'},
     {value: 'december', viewValue: 'December'},
   ];
+
+  changeGameEvents(table: any) {
+    switch (table) {
+      case 'lastGameEvents':
+        this.lastGameEvents = true;
+        this.pingPong = false;
+        this.pool = false;
+        break;
+      case 'pingPong':
+        this.lastGameEvents = false;
+        this.pingPong = true;
+        this.pool = false;
+        break;
+      case 'pool':
+        this.lastGameEvents = false;
+        this.pingPong = false;
+        this.pool = true;
+        break;
+      default:
+        break;
+
+    }
+  }
 }
