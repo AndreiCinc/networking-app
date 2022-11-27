@@ -1,1 +1,43 @@
-<p>event-card works!</p>
+<ng-container >
+  <div class="cardWrapper">
+      <div class="panelTitle">
+        <div CLASS="title">
+          <img class="availableBubble" src="../../../assets/Icons/Screenshot 2022-11-27 013609.png" alt="whatever">
+          <h1 class="organizerName">{{mockData.organizer}}</h1>
+        </div>
+        <span class="joinLabel">Join!</span>
+      </div>
+      <div class="description">
+        <span class="roleDescription">{{mockData.role}}</span>
+        <span class="workingOn">Working on: {{mockData.workingOn}}</span>
+      </div>
+      <div class="body" *ngIf="opened">
+        <span>Impacted:</span>
+        <div class="bodyElements" *ngFor="let impacted of mockData.impacted.value">
+          <span>{{impacted}}</span>
+        </div>
+        <div class="bodyElements" *ngFor="let hashtag of mockData.impacted.hashTag">
+          <span>#{{hashtag}}</span>
+        </div>
+        <div style="padding-top: 10px">
+          <span class="slots">Slots: {{mockData.joined}}/{{mockData.slots}}</span>
+          <div *ngFor="let player of mockData.players">
+            <span class="bodyElements">{{player}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="class">
+          <div class="timeAndPlace">
+            <span>{{mockData.startTime}}</span>
+            <span *ngFor="let place of mockData.places">
+              <span class="placeFormat">{{place}}</span>
+            </span>
+          </div>
+          
+        </div>
+        
+      </div>
+  </div>
+
+</ng-container>
