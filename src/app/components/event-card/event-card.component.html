@@ -1,1 +1,84 @@
-<p>event-card works!</p>
+<ng-container >
+  <div class="cardWrapper" (click)="handleOpen()">
+      <div class="panelTitle">
+        <div CLASS="title">
+          <img class="availableBubble" src="../../../assets/Icons/Screenshot 2022-11-27 013609.png" alt="whatever">
+          <h1 class="organizerName">{{mockDataA[0].organizer}}</h1>
+        </div>
+        <span class="joinLabel">Join!</span>
+      </div>
+      <div class="description">
+        <span class="roleDescription">{{mockDataA[0].role}}</span>
+        <span class="workingOn">Working on: {{mockDataA[0].workingOn}}</span>
+      </div>
+      <div class="body" *ngIf="opened">
+        <span>Impacted:</span>
+        <div class="bodyElements" *ngFor="let impacted of mockDataA[0].impacted.value">
+          <span>{{impacted}}</span>
+        </div>
+        <div class="bodyElements" *ngFor="let hashtag of mockDataA[0].impacted.hashTag">
+          <span>#{{hashtag}}</span>
+        </div>
+        <div style="padding-top: 10px">
+          <span class="slots">Slots: {{mockDataA[0].joined}}/{{mockDataA[0].slots}}</span>
+          <div *ngFor="let player of mockDataA[0].players">
+            <span class="bodyElements">{{player}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="class">
+          <div class="timeAndPlace">
+            <span class="startTime">{{mockDataA[0].startTime}}</span>
+            <span *ngFor="let place of mockDataA[0].places">
+              <span class="placeFormat">{{place}}</span>
+            </span>
+          </div>
+        </div>
+        <mat-progress-bar [color]="color" class="progress-bar" 
+        mode="determinate"
+        [value]="mockDataA[0].duration"></mat-progress-bar>
+      </div>
+  </div>
+  <div class="cardWrapper" (click)="handleOpenS()">
+    <div class="panelTitle">
+      <div CLASS="title">
+        <img class="availableBubble" src="../../../assets/Icons/Screenshot 2022-11-27 013609.png" alt="whatever">
+        <h1 class="organizerName">{{mockDataA[1].organizer}}</h1>
+      </div>
+      <span class="joinLabel">Join!</span>
+    </div>
+    <div class="description">
+      <span class="roleDescription">{{mockDataA[1].role}}</span>
+      <span class="workingOn">Working on: {{mockDataA[1].workingOn}}</span>
+    </div>
+    <div class="body" *ngIf="openedS">
+      <span>Impacted:</span>
+      <div class="bodyElements" *ngFor="let impacted of mockDataA[1].impacted.value">
+        <span>{{impacted}}</span>
+      </div>
+      <div class="bodyElements" *ngFor="let hashtag of mockDataA[1].impacted.hashTag">
+        <span>#{{hashtag}}</span>
+      </div>
+      <div style="padding-top: 10px">
+        <span class="slots">Slots: {{mockDataA[1].joined}}/{{mockDataA[1].slots}}</span>
+        <div *ngFor="let player of mockDataA[1].players">
+          <span class="bodyElements">{{player}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="class">
+        <div class="timeAndPlace">
+          <span class="startTime">{{mockDataA[1].startTime}}</span>
+          <span *ngFor="let place of mockDataA[1].places">
+            <span class="placeFormat">{{place}}</span>
+          </span>
+        </div>
+      </div>
+      <mat-progress-bar [color]="color" class="progress-bar" 
+      mode="determinate"
+      [value]="mockDataA[1].duration"></mat-progress-bar>
+    </div>
+</div>
+</ng-container>

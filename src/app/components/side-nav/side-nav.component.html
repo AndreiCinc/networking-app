@@ -1,29 +1,29 @@
 <div class="menu-icon">
-    <a [routerLink]="'networking'">
+    <a [ngClass]="networking ? 'active': ''"  (click)="navigate('networking')">
         <img src="../../../assets/Icons/NetWorking.png" alt="skdjask">
     </a>
 
-    <a [routerLink]="'rewards'">
+    <a [ngClass]="rewards ? 'active': ''"   (click)="navigate('rewards')"> 
         <img src="../../../assets/Icons/Rewards.png" alt="skdjask">
     </a>
 
-    <a [routerLink]="'gamification'">
+    <a [ngClass]="gamification ? 'active': ''"  (click)="navigate('gamification')">
         <img src="../../../assets/Icons/Gamification.png" alt="skdjask">
     </a>
 
-    <a [routerLink]="'feedback'">
+    <a [ngClass]="feedback ? 'active': ''" (click)="navigate('feedback')">
         <img src="../../../assets/Icons/Feedback.png" alt="skdjask">
     </a>
 
-    <a [routerLink]="'desk'">
+    <a [ngClass]="desk ? 'active': ''" (click)="navigate('desk')">
         <img src="../../../assets/Icons/Booking.png" alt="skdjask">
     </a>
 
-    <a [routerLink]="'time-traking'">
+    <a [ngClass]="timeTraking ? 'active': ''"  (click)="navigate('time-traking')">
         <img src="../../../assets/Icons/Time Tracking.png" alt="skdjask">
     </a>
 
-    <a [routerLink]="'car-pooling'">
+    <a [ngClass]="carPooling ? 'active': ''"  (click)="navigate('car-pooling')">
         <img src="../../../assets/Icons/CarPooling.png" alt="skdjask">
     </a>
 </div>
