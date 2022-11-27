@@ -1,10 +1,10 @@
-export const MOCK_EVENT_DATA = {
+export const MOCK_EVENT_DATA = [{
   available: true,
-  organizer: "Alex Irimias",
+  organizer: "Marian F",
   role: "Front End Developer",
   workingOn: "Network$Breaks web app",
   startTime: "13:45",
-  places: ["Ping-Pong", "Pool"],
+  places: ["Pool"],
   duration: 30,
   impacted: {
     value: ["Client Relations - MassMutual"],
@@ -12,5 +12,22 @@ export const MOCK_EVENT_DATA = {
   },
   slots: 4,
   joined: 2,
-  players: ["Andrei Cinc", "Ionut Rosan", "Catalin Rosan"]
+  players: ["Marian G", "George H"]
+},
+{
+  available: true,
+  organizer: "Alex I",
+  role: "Back End Developer",
+  workingOn: "Play",
+  startTime: "11:25",
+  places: ["Ping-Pong"],
+  duration: 100,
+  impacted: {
+    value: ["Challange"],
+    hashTag: ["Stables"],
+  },
+  slots: 2,
+  joined: 2,
+  players: ["Alex I", "Ionut D"]
 }
+]
